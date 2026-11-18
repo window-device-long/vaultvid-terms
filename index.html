@@ -1,0 +1,179 @@
+<!doctype html>
+<!--
+  EDIT BEFORE PUBLISHING (global find/replace):
+  [DEVELOPER_NAME]
+  [SUPPORT_EMAIL]
+  [EFFECTIVE_DATE: November 18, 2026]
+  Verify all SDKs, permissions, retention practices, and platform-blocking claims
+  against the release build and Google Play Data safety form.
+  Host over HTTPS with public access, no login, and no geographic restrictions.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#0B0F19">
+  <meta name="description" content="Terms of Service and Privacy Policy for VaultVid, the Android media utility. Learn about permitted use, local storage, permissions, and third-party services.">
+  <title>VaultVid — Terms of Service &amp; Privacy Policy</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0B0F19; --text:#E2E8F0; --muted:#94A3B8; --link:#38BDF8; --line:rgba(255,255,255,.1); }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:110px; }
+    body { margin:0; background:radial-gradient(ellipse at 0 0,rgba(99,102,241,.16),transparent 48%),radial-gradient(ellipse at 100% 25%,rgba(14,165,233,.09),transparent 45%),var(--bg); color:var(--text); font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; overflow-wrap:anywhere; }
+    a { color:var(--link); text-underline-offset:4px; }
+    a:hover { color:#BAE6FD; }
+    a:focus-visible { outline:2px solid var(--link); outline-offset:5px; border-radius:4px; }
+    .wrap { width:min(820px,calc(100% - 32px)); margin-inline:auto; }
+    .glass { background:rgba(255,255,255,.04); border:1px solid var(--line); border-radius:20px; -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px); }
+    .skip { position:fixed; top:8px; left:16px; transform:translateY(-160%); background:var(--bg); padding:12px; z-index:10; }
+    .skip:focus { transform:translateY(0); }
+    header { position:sticky; top:0; z-index:5; border-bottom:1px solid var(--line); background:rgba(11,15,25,.92); -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px); }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:16px; padding-block:16px; }
+    .brand { display:flex; align-items:center; gap:10px; font-size:21px; font-weight:750; color:var(--text); text-decoration:none; letter-spacing:-.7px; }
+    .mark { display:grid; place-items:center; width:32px; height:36px; border-radius:10px; background:linear-gradient(145deg,#6366F1,#0EA5E9); font-size:17px; color:white; }
+    nav { display:flex; gap:4px; }
+    nav a { padding:9px 11px; border-radius:10px; color:var(--text); font-size:13px; text-decoration:none; }
+    nav a:hover { background:rgba(255,255,255,.07); }
+    .hero { padding:64px 0 32px; }
+    .eyebrow { color:var(--link); font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+    h1 { font-size:clamp(34px,7vw,50px); line-height:1.13; letter-spacing:-1.8px; margin:16px 0; }
+    .intro { max-width:600px; color:var(--muted); font-size:18px; }
+    .metadata { display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
+    .badge { border:1px solid var(--line); background:rgba(255,255,255,.04); padding:6px 10px; border-radius:8px; font-size:12px; color:var(--muted); }
+    .document { margin:24px 0; padding:clamp(22px,5vw,42px); }
+    .section-label { color:var(--muted); font-size:12px; letter-spacing:2px; text-transform:uppercase; }
+    h2 { font-size:clamp(26px,5vw,32px); line-height:1.25; letter-spacing:-.8px; margin:8px 0 16px; }
+    h3 { font-size:18px; line-height:1.5; margin:28px 0 10px; }
+    p { margin:0 0 14px; }
+    ul { padding-left:22px; margin:12px 0 18px; }
+    li { padding-left:3px; margin:8px 0; }
+    .lead { color:var(--muted); padding-bottom:22px; border-bottom:1px solid var(--line); }
+    .notice { margin-top:22px; padding:16px 18px; border-left:3px solid #6366F1; border-radius:0 10px 10px 0; background:rgba(99,102,241,.08); }
+    .notice p { margin:0; }
+    code { font: .86em/1.6 ui-monospace,SFMono-Regular,Consolas,monospace; color:#BAE6FD; overflow-wrap:anywhere; }
+    dl { margin:16px 0; }
+    dt { margin-top:18px; font-weight:650; }
+    dd { margin:6px 0 0; color:var(--muted); }
+    address { font-style:normal; }
+    .contact-row { display:block; margin:8px 0; }
+    footer { color:var(--muted); font-size:13px; padding:12px 0 100px; }
+    .top { position:fixed; bottom:20px; right:20px; padding:10px 15px; border:1px solid var(--line); border-radius:100px; background:#161E30; box-shadow:0 8px 24px #0004; color:var(--text); font-size:13px; text-decoration:none; z-index:4; }
+    @media(max-width:600px) { html { scroll-padding-top:145px; } .nav { flex-direction:column; gap:8px; padding-block:10px; } nav { width:100%; justify-content:center; } nav a { padding:8px 10px; } .hero { padding-top:40px; } .top { bottom:12px; right:12px; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media print { :root { --text:#111; --muted:#444; --link:#145680; --line:#ccc; } body { background:white; color:#111; font-size:11pt; } header,.top,.skip { display:none; } .wrap { width:100%; } .hero { padding:0; } .glass { background:none; backdrop-filter:none; } .document { padding:20px; } h2,h3,dt { break-after:avoid; } a { color:#145680; } code { color:#222; } footer { padding-bottom:0; } }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to legal documents</a>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="VaultVid — back to top"><span class="mark" aria-hidden="true">V</span>VaultVid</a>
+      <nav aria-label="Legal navigation">
+        <a href="#terms">Terms of Service</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <div class="hero">
+      <span class="eyebrow">VaultVid / Legal center</span>
+      <h1>Your media.<br>Your privacy. Our terms.</h1>
+      <p class="intro">Understand how you can use VaultVid and how information is handled when you browse, download, and manage media.</p>
+      <div class="metadata" aria-label="Document details">
+        <span class="badge">[EFFECTIVE_DATE: November 18, 2026]</span>
+        <span class="badge">Android · Ages 18+</span>
+        <span class="badge">com.proxgame.tool.video_download</span>
+      </div>
+    </div>
+
+    <article id="terms" class="glass document" aria-labelledby="terms-title">
+      <span class="section-label">A / Use of the service</span>
+      <h2 id="terms-title">Terms of Service</h2>
+      <p class="lead">These Terms govern your use of VaultVid (package <code>com.proxgame.tool.video_download</code>), provided by the developer identified in the <a href="#contact">Contact Information</a> section below.</p>
+      <h3>1. Acceptance of Terms &amp; Age Requirement (18+)</h3>
+      <p>By installing or using VaultVid, you agree to these Terms and confirm that you are at least <strong>18 years of age</strong>. If you do not agree or are under 18, you must not use the app.</p>
+      <h3>2. Permitted Use &amp; Copyright Compliance</h3>
+      <p>VaultVid is a general-purpose media utility solely for content you own, public-domain media, or media for which you have explicit download permission from the relevant rights holder.</p>
+      <ul>
+        <li>You must not use VaultVid to infringe copyright or other intellectual property rights, or to download, reproduce, or distribute content without authorization.</li>
+        <li>Bypassing digital rights management (DRM), paywalls, or technical access controls is prohibited.</li>
+        <li><strong>YouTube and restricted platforms are not supported and are blocked.</strong> You must not attempt to circumvent these restrictions.</li>
+        <li>You are solely responsible for complying with third-party website terms and applicable local laws. Access to media or detection of a media URL does not grant permission to download or use it.</li>
+      </ul>
+      <h3>3. In-App Web Browser &amp; Third-Party Sites</h3>
+      <p>VaultVid includes an open-web browser. We do not host, control, or endorse third-party websites or their content, products, or services. Your interactions with those websites are governed by their terms and privacy policies. You are responsible for the websites you visit and the content you access.</p>
+      <h3>4. Advertisements &amp; Third-Party SDKs</h3>
+      <p>The app may display third-party advertisements, such as Google AdMob ads, and use stability and analytics tools, such as Firebase Analytics and Crashlytics. These services handle information under their own policies, as described in our <a href="#privacy">Privacy Policy</a>. An advertisement does not constitute our endorsement of the advertiser or its offering.</p>
+      <h3>5. Disclaimer of Warranties &amp; Limitation of Liability</h3>
+      <p>To the extent permitted by applicable law, VaultVid is provided <strong>“AS IS” and “AS AVAILABLE”</strong>, without express or implied warranties, including merchantability, fitness for a particular purpose, and non-infringement. We do not guarantee uninterrupted operation, error-free functionality, or compatibility with any website.</p>
+      <p>Media detection and downloads depend on third-party server behavior, website changes, network conditions, and device capabilities. You are responsible for maintaining backups of important files.</p>
+      <p>To the extent permitted by law, the developer is not liable for indirect, incidental, special, consequential, or punitive damages, including loss of data, revenue, or profits arising from use of or inability to use the app. Nothing in these Terms excludes liability that cannot legally be excluded or limits your mandatory consumer rights.</p>
+      <h3>6. Changes &amp; Discontinuing Use</h3>
+      <p>We may update these Terms as the app or applicable requirements change. Updates will be posted on this page with a revised effective date. Where required, we will provide additional notice or obtain consent. You may stop using VaultVid and uninstall it at any time.</p>
+    </article>
+
+    <article id="privacy" class="glass document" aria-labelledby="privacy-title">
+      <span class="section-label">B / Information &amp; your choices</span>
+      <h2 id="privacy-title">Privacy Policy</h2>
+      <p class="lead">This policy explains how VaultVid handles information, including local app data and information processed by third-party websites and SDKs. The responsible developer and privacy contact are listed in <a href="#contact">Contact Information</a>.</p>
+      <h3>1. Local Processing of App Data</h3>
+      <p><strong>No VaultVid account is required.</strong> URLs you enter, download queues and history, app preferences, optional session cookies, and downloaded, encrypted, or decoded media files are processed and stored locally on your device for browsing, managing downloads, and accessing your media.</p>
+      <p>This local storage does not mean all activity stays offline. When you open a website or request media, the requested URL and applicable cookies are sent to that website or media server. Advertising and analytics SDKs may also transmit the information described below.</p>
+      <h3>2. Advertising &amp; Analytics Disclosure</h3>
+      <p>VaultVid integrates third-party advertising and analytics SDKs, such as <strong>Google AdMob and Firebase Analytics/Crashlytics</strong>. Depending on the SDK, configuration, device settings, and applicable consent, these providers may collect or receive:</p>
+      <ul>
+        <li><strong>Device or other IDs</strong>, including the Android Advertising ID and app installation identifiers.</li>
+        <li><strong>IP address</strong> and connection information, which may be used to infer approximate location.</li>
+        <li><strong>App activity and ad interactions</strong>, such as app events, ad impressions, and clicks.</li>
+        <li><strong>Diagnostic data</strong>, including crash reports, performance information, device model, operating system version, and app version.</li>
+      </ul>
+      <p>These providers process information for ad delivery and measurement, analytics, app stability, security, and fraud prevention. Information may be transmitted off your device to their servers and processed in countries other than your own. Their policies describe their security measures, retention, and available privacy rights.</p>
+      <p>Learn more in <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>, <a href="https://policies.google.com/technologies/ads">Google’s advertising information</a>, and <a href="https://firebase.google.com/support/privacy">Firebase’s privacy and security information</a>.</p>
+      <p>You can manage available advertising privacy controls in Android settings and use any consent options presented in the app. Availability varies by Android version and region; changing advertising settings does not necessarily stop all diagnostic or security processing.</p>
+      <h3>3. Third-Party Websites</h3>
+      <p>When you browse or request streams, your device connects directly to third-party servers. Those servers receive standard connection metadata, including your IP address, User-Agent, requested URL, and applicable cookies. Websites may collect additional information you provide or interact with, under their own privacy policies. VaultVid does not control those practices.</p>
+      <h3>4. Android Permissions Explained</h3>
+      <p>Permissions depend on your Android version and the features you use. Where Android requires runtime permission, you can grant or deny it and review it in system settings.</p>
+      <dl>
+        <dt><code>INTERNET</code></dt>
+        <dd>Connects to websites and media servers for browsing and downloads, and enables network access for advertising and analytics services.</dd>
+        <dt><code>POST_NOTIFICATIONS</code></dt>
+        <dd>Shows download progress, completion, and service notifications on supported Android versions.</dd>
+        <dt><code>FOREGROUND_SERVICE</code> / <code>FOREGROUND_SERVICE_DATA_SYNC</code></dt>
+        <dd>Runs user-initiated downloads as foreground data-transfer tasks with the system-required service notification.</dd>
+        <dt><code>WAKE_LOCK</code></dt>
+        <dd>Helps keep the CPU awake while active downloads or related processing complete.</dd>
+        <dt>Legacy storage permissions: <code>READ_EXTERNAL_STORAGE</code> / <code>WRITE_EXTERNAL_STORAGE</code></dt>
+        <dd>On older Android versions where applicable, reads and saves media in shared device storage. Newer Android versions use the storage access mechanisms applicable to that version.</dd>
+      </dl>
+      <p>Denying or revoking a permission may limit the associated feature. Permissions do not grant you rights to third-party media.</p>
+      <h3>5. Data Retention, User Control &amp; Children’s Privacy</h3>
+      <p><strong>Local data:</strong> App data remains on your device until you delete it, clear the app’s storage, or uninstall the app. Use available in-app controls to remove history or cookies, or Android Settings → Apps → VaultVid → Storage to clear app data. Labels vary by device. Clearing app data may remove settings, private files, and locally stored keys, making encrypted files inaccessible.</p>
+      <p><strong>Downloaded files:</strong> Files saved in shared storage, exported copies, and device backups may remain after clearing app data or uninstalling. Delete those separately using your file manager or backup provider’s controls.</p>
+      <p><strong>Third-party data:</strong> Clearing local data does not delete information already received by advertising, analytics, or website providers. They retain data according to their own policies, service settings, and legal obligations. Use their privacy controls or contact us for assistance with a request concerning VaultVid.</p>
+      <p><strong>Privacy requests:</strong> Depending on your location, you may have rights to access, correct, delete, or restrict processing of personal information. Contact us using the details below. We cannot remotely access or erase files stored only on your device.</p>
+      <p><strong>Children’s privacy:</strong> VaultVid is strictly not intended for anyone under 18. We do not knowingly collect personal information from anyone under 18. If you believe such information has been provided through VaultVid, contact us so we can investigate and take appropriate action.</p>
+      <h3>6. Security &amp; Policy Updates</h3>
+      <p>Protect your device and restrict access to your downloaded media. No storage or transmission method is completely secure, and encryption features do not guarantee protection against all risks.</p>
+      <p>We may update this policy to reflect changes in the app or data practices. The current version will appear here with its effective date. Where required, material changes will receive additional notice or consent.</p>
+      <div class="notice"><p><strong>About this webpage:</strong> This document contains no analytics, tracking scripts, cookies, or external font requests. The hosting provider may process standard connection information, such as IP addresses and server access logs, to deliver and secure the page. Following an external link is subject to the destination’s privacy policy.</p></div>
+    </article>
+
+    <section id="contact" class="glass document" aria-labelledby="contact-title">
+      <span class="section-label">C / Get in touch</span>
+      <h2 id="contact-title">Contact Information</h2>
+      <p>For questions about these Terms, this Privacy Policy, or a privacy request, contact the developer responsible for VaultVid.</p>
+      <address>
+        <span class="contact-row"><strong>Developer:</strong> Proxgame</span>
+        <span class="contact-row"><strong>Email:</strong> <a href="mailto:longnpdevmobile@gmail.com">longnpdevmobile@gmail.com</a></span>
+      </address>
+      <p>Please identify VaultVid in your message and avoid sending passwords, session cookies, or private media files.</p>
+    </section>
+  </main>
+  <footer class="wrap">VaultVid · Terms &amp; Privacy<br>Android application: <code>com.proxgame.tool.video_download</code></footer>
+  <a class="top" href="#top" aria-label="Back to top">↑ Back to top</a>
+</body>
+</html>
